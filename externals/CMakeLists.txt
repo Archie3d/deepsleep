@@ -1,0 +1,5 @@
+add_subdirectory(sdl2)
+add_subdirectory(sdl2_image)
+add_subdirectory(glew)
+add_subdirectory(glm)
+add_subdirectory(tinyxml2)

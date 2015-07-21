@@ -1,0 +1,25 @@
+<resources>
+    <group name="meshes">
+        <resource type="mesh" name="teapot" src="teapot.obj" />
+    </group>
+    <group name="textures">
+        <group name="diffuse">
+            <resource type="texture" name="wood" src="wood_d.png" />
+        </group>
+        <group name="nromal">
+            <resource type="texture" name="wood" src="wood_n.png" />
+        </group>
+    </group>
+</resources>
+<!--
+
+Resources can be accesses using / separator:
+
+Resource *pRes = pCache->get("meshes/teapot");
+Mesh *pMesh = pCache->get<Mesh*>("meshed/teapot");
+
+This XML is supposed to be compiled into binary serialized stream.
+
+Types:
+    texture, mesh, shader,..
+-->

@@ -1,0 +1,8 @@
+if(USE_OPENGL)
+    find_package(OpenGL REQUIRED)
+    include_directories(${OPENGL_INCLUDE_DIR})
+    target_link_libraries(${PROJECT_NAME} ${OPENGL_LIBRARIES})
+    if(APPLE)
+        set(CMAKE_CXX_LINK_FLAGS "-framework OpenGL")
+    endif(APPLE)
+endif(USE_OPENGL)
